@@ -30,4 +30,5 @@ print(forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].head())
 
 # Plot the forecast
 fig = model.plot(forecast)
+fig2 = model.plot_components(forecast)
 plt.show()
