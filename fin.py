@@ -20,7 +20,15 @@ model = Prophet()
 model.fit(df)
 
 # Create a dataframe with future dates for forecasting
+<<<<<<< Updated upstream
 future = model.make_future_dataframe(periods=60)  # Forecasting for the next 30 days
+=======
+<<<<<<< HEAD
+future = model.make_future_dataframe(periods=65)  # Forecasting for the next 30 days
+=======
+future = model.make_future_dataframe(periods=60)  # Forecasting for the next 30 days
+>>>>>>> 46632a13658b8d3d451bd999aa5e307c95faf5e3
+>>>>>>> Stashed changes
 
 # Make the forecast
 forecast = model.predict(future)
