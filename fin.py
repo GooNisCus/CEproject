@@ -42,3 +42,5 @@ fig2 = model.plot_components(forecast)
 plt.show()
 
 fig3 = model.predict_seasonal_components(forecast)
+#this is a new comment
+
