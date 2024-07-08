@@ -20,7 +20,7 @@ model = Prophet()
 model.fit(df)
 
 # Create a dataframe with future dates for forecasting
-future = model.make_future_dataframe(periods=30)  # Forecasting for the next 30 days
+future = model.make_future_dataframe(periods=60)  # Forecasting for the next 30 days
 
 # Make the forecast
 forecast = model.predict(future)
